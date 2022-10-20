@@ -8,13 +8,6 @@
 #include <unistd.h>
 #include <stddef.h>
 
-typedef struct printer
-{
-	char *symbol;
-	int (*print)(va_list args);
-
-}prints;
-
 int _putchar(char c);
 int _printf(const char *format, ...);
 int print_char(va_list args);
